@@ -2,6 +2,8 @@
 
 HAVE_MYSQL=@HAVE_MYSQL@
 OMAP=@OMAP@
+CXXFLAGS += -I./custom
+
 ifeq ($(HAVE_MYSQL),yes)
 	ALL_DEPENDS=server tools
 	SERVER_DEPENDS=common login char map web import
