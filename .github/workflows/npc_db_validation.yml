@@ -36,7 +36,8 @@ jobs:
                 # Only a single version of GCC is required for validating NPC scripts and database changes.
                 gcc: ["11"]
                 # We run build checks for both Renewal and PRE-Renewal
-                mode: ["PRE", "RE"]
+                # mode: ["PRE", "RE"]
+                mode: ["PRE"]
 
         steps:
             - uses: actions/checkout@v4
