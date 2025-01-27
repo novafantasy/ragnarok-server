@@ -36,6 +36,9 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - name: Grant execute permissions
+              run: chmod +x configure
+
             - name: Set up Clang
               uses: egor-tensin/setup-clang@v1
               with:

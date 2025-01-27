@@ -40,6 +40,9 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
+            - name: Grant execute permissions
+              run: chmod +x configure
+
             - name: Update & Install packages
               # Ubuntu runners already have most of the packages rAthena requires to build.
               # https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-Readme.md

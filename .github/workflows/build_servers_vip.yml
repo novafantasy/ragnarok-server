@@ -40,7 +40,9 @@ jobs:
             - uses: actions/checkout@v4
 
             - name: Grant execute permissions
-              run: chmod +x ./tools/ci/sql.sh
+              run: |
+                  chmod +x ./tools/ci/sql.sh
+                  chmod +x configure
 
             # A simple 'yes' and 'no' can be confusing, so we use names to display in the current job then convert them for use in the compiler.
             - name: Variable Parsing - PRE
